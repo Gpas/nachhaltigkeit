@@ -1,0 +1,92 @@
+\documentclass[10pt,paper=a4,final]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}           %allows us to specify the 'seitenrand'
+\usepackage{graphicx}           %package used to include graphics
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}           %used to make klickable links
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage[figuresright]{rotating}
+\usepackage{nameref}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{ngerman} % Make the document German
+% Make the document German
+\usepackage{ngerman}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{mdwlist}
+\usepackage[table,usenames,dvipsnames]{xcolor}
+\usepackage{currfile}
+\usepackage{tikz}
+\usepackage{attachfile}
+\usetikzlibrary{shapes}
+\usetikzlibrary{arrows}
+\usepackage{attachfile}
+
+
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\title{Nachhaltigkeit in den Ingenieurswissenschaften}
+\subtitle{Projekt Skize}
+\author{Stefan Andonie \& Pascal Grütter}
+\date{\today{}}
+
+% Make title and author accessible in the header/footer
+\makeatletter
+  \let\Title\@title
+  \let\Subtitle\@subtitle
+  \let\Author\@author
+\makeatother
+
+\pagestyle{fancy}
+
+%\geometry{a4paper, top=20mm, right=20mm, bottom=20mm, left=20mm}
+
+\fancyhf{}      %delete default values
+
+\setlength{\headheight}{1.5cm}
+\setlength{\headwidth}{\textwidth}      %header and footer width equal the text width
+
+% Header and Footer offset
+\newlength\FHoffset
+\setlength\FHoffset{1.5cm}
+\addtolength\headwidth{2\FHoffset}
+\fancyheadoffset{\FHoffset}
+\fancyfootoffset{\FHoffset}
+
+%\lhead{\Author}
+\lhead{\itshape \Author \newline \Subtitle \newline \Title \newline BZG2309a}
+%\rhead{\Title}
+\rhead{ \includegraphics[width=4cm]{bfh_logo} }
+\fancyfoot[LE,LO]{\textbf{BFH - Berne University of Applied Sciences} \newline
+\currfilename }
+%\fancyfoot[RE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\begin{document}
+
+\section*{Nachhaltigkeitsanalyse einer Wärmepumpe}
+
+\subsection*{Zusammenfassung}
+
+\subsection*{Kontext \& Umfeld}
+
+\subsection*{}
+\subsection*{}
+\subsection*{}
+\subsection*{}
+\subsection*{}
+
+
+\end{document}
