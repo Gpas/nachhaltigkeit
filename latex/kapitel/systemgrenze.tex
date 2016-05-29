@@ -16,7 +16,7 @@ wird (Output).
 \section{das System}
 
 Wir betrachten in unserer Arbeit ein Heizsystem in Form einer
-Solewasserwärmepumpe und als Vergleichssystem eine Heizung mit
+Sole-Wasser Wärmepumpe und als Vergleichssystem eine Heizung mit
 Ölbrennwertkessel.
 
 \section{Input}
@@ -33,18 +33,15 @@ Die Solewasserwärmepumpe bezieht ihre Energie hauptsächlich aus zwei Quellen:
 \end{itemize}
 
 Für uns ist vor allem der Stromverbrauch interessant, da dies ein Kostenpunkt
-ist und damit auch Umweltbelastungen verbunden sind.
+ist und damit auch Umweltbelastungen verbunden sind. Die benötigte Sole für den Erdwärmekreislauf und das Kältemittel für den Wärmekreislauf werden wir nicht in den Input einbeziehen. Wir betrachten die Erdwärme als öffentliches Gut, das unbegrenzt und kostenlos zur Verfügung steht.
 
-Als Grundlage nehmen wir den Liferanten-Strommix in der Schweiz\cite{bafu:strommix}
-dieser veruhrsacht 81.6 g $CO_2 /kWh$
-und benötgt bei der Produktion 10.1 MJ/kWh wir Rechnen um
-und erhalten 2.8 kW um einee kWh Strom zu erzeugen.
-Diese Werte sind natürlich viel höher als bei Bezug eines Zertifizierten 
-Strommixes. Wir gehen aber davon aus, das ein Durchschnittlicher Strommix
+Als Grundlage nehmen wir den Lieferanten-Strommix in der Schweiz\cite{bafu:strommix},
+dieser verursacht 81.6 g $CO_2 /kWh$
+und benötgt bei der Produktion 10.1 MJ/kWh. Wir rechnen um
+und erhalten 2.8 kW um eine kWh Strom zu erzeugen.
+Diese Werte sind natürlich viel höher als bei Bezug eines zertifizierten 
+Strommixes. Wir gehen aber davon aus, das ein durchschnittlicher Strommix
 vom Anbieter bezogen wird.
-
-Wir betrachten die Erdwärme als öffentliches Gut, das unbegrenzt und kostenlos
-zur Verfügung steht.
 
 Ein Ölbrennwertkessel bezieht seine Energie in Form von Heizöl.
 Wir können den Energieinput dadurch berechnen indem wir den Literverbrauch
@@ -59,29 +56,28 @@ verbraucht wird, werden wird nicht berücksichtigen.
 Wir nehmen an, das die Systeme im wesentlichen aus den gleichen Materialien
 gefertigt sind. Auch ignorieren wir die benötigte Energie für die Bohrungen der
 Löcher für die Erdwärmegewinnung.
-Die Lebensdauer einer Heizung ist etwa die selbe wie die des Hauses, 
-30 - 50 Jahre.
+Die Lebensdauer einer Heizung ist je nach Typ unterschiedlich. 15-20 Jahre bei Wärmepumpe\cite{offerten24:wp} und 20-25 Jahre bei Ölheizung\cite{offerten24:oel}.
 Da wir den Verbrauch pro Jahr berechnen würde sich die Graueenergie auf diesen
 Zeitraum verteilen.
 
 \section{Output}
 
-Als Output haben wir die Wärmeleistung eines Grätes, genauer gesagt die
+Als Output haben wir die Wärmeleistung eines Gerätes, genauer gesagt die
 Nennwärmeleistung.
-Um was handelt es sich hierbei?
+
 Die Nennwärmeleistung ist die nach Abzug von Verlusten tatsächlich nutzbare
 Energie pro Zeit in kW.\cite{heizung:nennwarmeleistung}
 
 Eine Heizung ist ein Wasserkreislauf der mit einer bestimmten Temperatur
-(Rücklauftemperatur) in das System eintritt und auf ein gewisses Temperaturniveau
+(Rücklauftemperatur) in das Heizungsystem eintritt und auf ein gewisses Temperaturniveau
 gehoben wird (Vorlauftemperatur). Das erhitzte Wasser verlässt das System und
-gibt die aufgenommene Energie an die Umgebung ab.
+gibt die aufgenommene Energie durch Heizkörper an die Umgebung ab.
  
 Moderne Heizungsysteme werden als Fussbodenheizung realisiert.
-Wir können die Benötigte Heizleistung für ein Zweistöckiges Ein bis Zwei
+Wir können die benötigte Heizleistung für ein zweistöckiges Ein bis Zwei
 Familienhaus mit einer Fläche von 100 $m^2$ und einer Raumhöhe von 2 m berechnen
 wenn wir eine Temperatur von 22 C° haben wollen.
-Dies Ergibt uns eine benötigte Hezleistung von etwa 10 Kw.
+Dies ergibt uns eine benötigte Heizleistung von etwa 10 Kw.
 \cite{heizung:berechnung}
 
 Aus der Outputenergie können wir über den Wirkungsgrad Rückschlüsse über
