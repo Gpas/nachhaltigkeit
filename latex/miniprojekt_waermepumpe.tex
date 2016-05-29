@@ -9,8 +9,8 @@
 \documentclass[
 	a4paper,					% paper format
 	10pt,							% fontsize
-	twoside,					% double-sided
-	openright,				% begin new chapter on right side
+	%twoside,					% double-sided
+	%openright,				% begin new chapter on right side
 	notitlepage,			% use no standard title page
 	parskip=half,			% set paragraph skip to half of a line
 ]{scrreprt}					% KOMA-script report
@@ -24,6 +24,7 @@
 %---------------------------------------------------------------------------
 \usepackage[standard-baselineskips]{cmbright}
 
+\usepackage{pdfpages}
 \usepackage[ngerman]{babel}										% german hyphenation
 %\usepackage[latin1]{inputenc}  							% Unix/Linux - load extended character set (ISO 8859-1)
 \usepackage[utf8]{inputenc}  							% Windows - load extended character set (ISO 8859-1)
@@ -237,7 +238,8 @@
 %---------------------------------------------------------------------------
 \appendix
 \settocdepth{section}
-%\include{anhang/beispielanhang}
+\include{anhang/reflexion}
+\include{anhang/projektskizeanhang}
 %---------------------------------------------------------------------------
 
 %---------------------------------------------------------------------------
