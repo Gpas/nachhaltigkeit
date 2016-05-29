@@ -46,9 +46,6 @@
 \usepackage{amsfonts}                      		% set of miscellaneous TeX fonts that augment the standard CM
 \usepackage{amssymb}													% mathematical special characters
 \usepackage{exscale}													% mathematical size corresponds to textsize
-
-
-\usepackage{pdfpages}					%include pdffiles
 %---------------------------------------------------------------------------
 
 % Package to facilitate placement of boxes at absolute positions
@@ -56,8 +53,6 @@
 \usepackage[absolute]{textpos}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-
-
 %---------------------------------------------------------------------------					
 			
 % Definition of Colors
@@ -177,6 +172,18 @@
 \cleardoublepage
 %---------------------------------------------------------------------------
 
+% Listings
+%---------------------------------------------------------------------------
+\cleardoublepage
+\phantomsection 
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+\cleardoublepage
+\phantomsection 
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+%---------------------------------------------------------------------------
+
 % Main part:
 %---------------------------------------------------------------------------
 \pagenumbering{arabic}
@@ -217,18 +224,6 @@
 \bibliography{datenbanken/bibliography}{}
 %---------------------------------------------------------------------------
 
-% Listings
-%---------------------------------------------------------------------------
-\cleardoublepage
-\phantomsection 
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
-\listoffigures
-\cleardoublepage
-\phantomsection 
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
-\listoftables
-%---------------------------------------------------------------------------
-
 % Index
 %---------------------------------------------------------------------------
 %\cleardoublepage
@@ -242,9 +237,7 @@
 %---------------------------------------------------------------------------
 \appendix
 \settocdepth{section}
-\include{anhang/reflexion}
-\include{anhang/projektskizeanhang}
-
+%\include{anhang/beispielanhang}
 %---------------------------------------------------------------------------
 
 %---------------------------------------------------------------------------
