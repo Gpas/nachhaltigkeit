@@ -9,7 +9,7 @@
 \documentclass[
 	a4paper,					% paper format
 	10pt,							% fontsize
-	%twoside,					% double-sided
+	twoside,					% double-sided
 	%openright,				% begin new chapter on right side
 	notitlepage,			% use no standard title page
 	parskip=half,			% set paragraph skip to half of a line
@@ -158,31 +158,31 @@
 \include{vorspann/titelseite_ohne_bild}		% activate for Titelseite ohne Bild
 %\include{vorspann/titelseite_mit_bild}			% activate for Titelseite mit Bild
 %\include{vorspann/versionen}
-\cleardoubleemptypage
-\setcounter{page}{1}
 \cleardoublepage
+\setcounter{page}{1}
 \phantomsection 
 \addcontentsline{toc}{chapter}{Management Summary}
 \include{vorspann/management_summary}
-\cleardoubleemptypage
+\clearpage
 %---------------------------------------------------------------------------
 
 % Table of contents
 %---------------------------------------------------------------------------
 \tableofcontents
-\cleardoublepage
+\clearpage
 %---------------------------------------------------------------------------
 
 % Listings
 %---------------------------------------------------------------------------
-\cleardoublepage
+\clearpage
 \phantomsection 
 \addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
 \listoffigures
-\cleardoublepage
+\clearpage
 \phantomsection 
 \addcontentsline{toc}{chapter}{Tabellenverzeichnis}
 \listoftables
+\clearpage
 %---------------------------------------------------------------------------
 
 % Main part:
